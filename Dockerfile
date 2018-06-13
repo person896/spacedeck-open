@@ -20,6 +20,7 @@ COPY routes /usr/src/app/routes
 COPY styles /usr/src/app/styles
 COPY views /usr/src/app/views
 
+RUN npm install gulp
 RUN gulp all
 RUN npm cache clean
 
