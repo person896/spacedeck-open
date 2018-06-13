@@ -7,6 +7,7 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
 RUN npm install
 RUN npm update
+RUN npm install require-dir
 RUN npm install gulp
 RUN npm install gulp-rev-replace gulp-clean gulp-fingerprint gulp-rev gulp-rev-all gulp-rev-replace
 RUN npm install gulp-sass --save-dev
