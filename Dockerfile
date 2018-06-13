@@ -25,7 +25,7 @@ COPY routes /usr/src/app/routes
 COPY styles /usr/src/app/styles
 COPY views /usr/src/app/views
 
-RUN gulp all
+RUN gulp styles
 RUN npm cache clean
 
 CMD [ "node", "spacedeck.js" ]
