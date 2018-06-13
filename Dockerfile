@@ -23,7 +23,7 @@ COPY views /usr/src/app/views
 RUN gulp all
 RUN npm cache clean
 
-CMD [ "node", "app.js" ]
+CMD [ "node", "spacedeck.js" ]
 
 EXPOSE 9666
 
