@@ -6,7 +6,10 @@ WORKDIR /usr/src/app
 
 COPY package.json /usr/src/app/
 RUN npm install
+RUN npm update
+RUN npm install gulp
 RUN npm install gulp-rev-replace gulp-clean gulp-fingerprint gulp-rev gulp-rev-all gulp-rev-replace
+RUN npm install gulp-sass --save-dev
 RUN npm install -g --save-dev gulp
 
 COPY app.js Dockerfile Gulpfile.js LICENSE /usr/src/app/
@@ -20,7 +23,6 @@ COPY routes /usr/src/app/routes
 COPY styles /usr/src/app/styles
 COPY views /usr/src/app/views
 
-RUN npm install gulp
 RUN gulp all
 RUN npm cache clean
 
