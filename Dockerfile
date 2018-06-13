@@ -1,5 +1,5 @@
 FROM spacedeck/docker-baseimage:latest
-ENV NODE_ENV production
+ENV NODE_ENV development
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
