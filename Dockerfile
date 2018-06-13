@@ -14,7 +14,7 @@ RUN npm install gulp-sass --save-dev
 RUN npm install -g --save-dev gulp
 RUN npm install gulp-concat --save-dev
 
-COPY app.js Dockerfile Gulpfile.js LICENSE /usr/src/app/
+COPY app.js spacedeck.js Dockerfile Gulpfile.js LICENSE /usr/src/app/
 COPY config /usr/src/app/config
 COPY helpers /usr/src/app/helpers
 COPY locales /usr/src/app/locales
