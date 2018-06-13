@@ -11,6 +11,7 @@ RUN npm install gulp
 RUN npm install gulp-rev-replace gulp-clean gulp-fingerprint gulp-rev gulp-rev-all gulp-rev-replace
 RUN npm install gulp-sass --save-dev
 RUN npm install -g --save-dev gulp
+RUN npm install gulp-concat --save-dev
 
 COPY app.js Dockerfile Gulpfile.js LICENSE /usr/src/app/
 COPY config /usr/src/app/config
